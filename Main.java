@@ -51,7 +51,8 @@ public class Main {
     public Color bkcolor = new Color(255, 140, 0);
     public JLabel team, match, page1, page2, page3, page4, page5, bottom, top, topCenter, spinWheel, powerCellLevel, choose1;
     public JSpinner teamSpinner, matchSpinner, bottomSpinner, topSpinner, topCenterSpinner;
-    public JCheckBox spinWheelCheckBox, heavy, medium, light, climb;
+    public JSpinner bottomSpinner3, topSpinner3, topCenterSpinner3;
+    public JCheckBox spinWheelCheckBoxNo, spinWheelCheckBoxYes, spinWheelCheckBoxNo3, spinWheelCheckBoxYes3, heavy, medium, light, climb;
     public JTextArea otherInfo;
 
 
@@ -241,14 +242,14 @@ public class Main {
     }
     public void createTopLabel(){                                                       //page 2 top area label
         top = new JLabel("Top: ");
-        top.setBounds(20, 170, 100, 40);
+        top.setBounds(20, 220, 100, 40);
         top.setVisible(true);
         top.setFont(new Font ("Times New Roman", Font.BOLD, 20));
         panel2.add(this.top);
     }
     public void createBottomLabel(){                                                    //page 2 bottom area label
         bottom = new JLabel("Bottom: ");
-        bottom.setBounds(20, 220, 100 ,40);
+        bottom.setBounds(20, 170, 100 ,40);
         bottom.setVisible(true);
         bottom.setFont(new Font ("Times New Roman", Font.BOLD, 20));
         panel2.add(this.bottom);
@@ -297,14 +298,14 @@ public class Main {
         topSpinner = new JSpinner();
         panel2.add(this.topSpinner);
         topSpinner.setVisible(true);
-        topSpinner.setBounds(300, 170, 100, 40);
+        topSpinner.setBounds(300, 220, 100, 40);
         topSpinner.setBorder(BorderFactory.createLineBorder(Color.black, 5));
     }
     public void createBottomSpinner(){                                                      //page 2 bottom area spinner
         bottomSpinner = new JSpinner();
         panel2.add(this.bottomSpinner);
         bottomSpinner.setVisible(true);
-        bottomSpinner.setBounds(300, 220, 100, 40);
+        bottomSpinner.setBounds(300, 170, 100, 40);
         bottomSpinner.setBorder(BorderFactory.createLineBorder(Color.black, 5));
     }
     public void createTopCenterSpinner(){                                               //page 2 top center spinner
@@ -316,20 +317,20 @@ public class Main {
     }
 
     public void createSpinWheelCheckboxYes(){
-        spinWheelCheckBox = new JCheckBox("YES");
-        panel2.add(this.spinWheelCheckBox);
-        spinWheelCheckBox.setVisible(true);
-        spinWheelCheckBox.setSelected(false);
-        spinWheelCheckBox.setBounds(250, 340, 60, 60);
-        spinWheelCheckBox.setBackground(bkcolor);
+        spinWheelCheckBoxYes = new JCheckBox("YES");
+        panel2.add(this.spinWheelCheckBoxYes);
+        spinWheelCheckBoxYes.setVisible(true);
+        spinWheelCheckBoxYes.setSelected(false);
+        spinWheelCheckBoxYes.setBounds(250, 340, 60, 60);
+        spinWheelCheckBoxYes.setBackground(bkcolor);
     }
     public void createSpinWheelCheckboxNo(){
-        spinWheelCheckBox = new JCheckBox("NO");
-        panel2.add(this.spinWheelCheckBox);
-        spinWheelCheckBox.setVisible(true);
-        spinWheelCheckBox.setSelected(false);
-        spinWheelCheckBox.setBounds(350, 340, 60, 60);
-        spinWheelCheckBox.setBackground(bkcolor);
+        spinWheelCheckBoxNo = new JCheckBox("NO");
+        panel2.add(this.spinWheelCheckBoxNo);
+        spinWheelCheckBoxNo.setVisible(true);
+        spinWheelCheckBoxNo.setSelected(false);
+        spinWheelCheckBoxNo.setBounds(350, 340, 60, 60);
+        spinWheelCheckBoxNo.setBackground(bkcolor);
     }
 
 
@@ -351,14 +352,14 @@ public class Main {
     }
     public void createTopLabel3(){                                                       //page 3 top area label
         top = new JLabel("Top: ");
-        top.setBounds(20, 170, 100, 40);
+        top.setBounds(20, 220, 100, 40);
         top.setVisible(true);
         top.setFont(new Font ("Times New Roman", Font.BOLD, 20));
         panel3.add(this.top);
     }
     public void createBottomLabel3(){                                                    //page 3 bottom area label
         bottom = new JLabel("Bottom: ");
-        bottom.setBounds(20, 220, 100 ,40);
+        bottom.setBounds(20, 170, 100 ,40);
         bottom.setVisible(true);
         bottom.setFont(new Font ("Times New Roman", Font.BOLD, 20));
         panel3.add(this.bottom);
@@ -388,42 +389,42 @@ public class Main {
 
 
     public void createTopSpinner3(){                                                     //page 3 top area spinner
-        topSpinner = new JSpinner();
-        panel3.add(this.topSpinner);
-        topSpinner.setVisible(true);
-        topSpinner.setBounds(300, 170, 100, 40);
-        topSpinner.setBorder(BorderFactory.createLineBorder(Color.black, 5));
+        topSpinner3 = new JSpinner();
+        panel3.add(this.topSpinner3);
+        topSpinner3.setVisible(true);
+        topSpinner3.setBounds(300, 220, 100, 40);
+        topSpinner3.setBorder(BorderFactory.createLineBorder(Color.black, 5));
     }
     public void createBottomSpinner3(){                                                      //page 3 bottom area spinner
-        bottomSpinner = new JSpinner();
-        panel3.add(this.bottomSpinner);
-        bottomSpinner.setVisible(true);
-        bottomSpinner.setBounds(300, 220, 100, 40);
-        bottomSpinner.setBorder(BorderFactory.createLineBorder(Color.black, 5));
+        bottomSpinner3 = new JSpinner();
+        panel3.add(this.bottomSpinner3);
+        bottomSpinner3.setVisible(true);
+        bottomSpinner3.setBounds(300, 170, 100, 40);
+        bottomSpinner3.setBorder(BorderFactory.createLineBorder(Color.black, 5));
     }
     public void createTopCenterSpinner3(){                                               //page 3 top center spinner
-        topCenterSpinner = new JSpinner();
-        panel3.add(this.topCenterSpinner);
-        topCenterSpinner.setVisible(true);
-        topCenterSpinner.setBounds(300, 270, 100, 40);
-        topCenterSpinner.setBorder(BorderFactory.createLineBorder(Color.black, 5));
+        topCenterSpinner3 = new JSpinner();
+        panel3.add(this.topCenterSpinner3);
+        topCenterSpinner3.setVisible(true);
+        topCenterSpinner3.setBounds(300, 270, 100, 40);
+        topCenterSpinner3.setBorder(BorderFactory.createLineBorder(Color.black, 5));
     }
 
     public void createSpinWheelCheckboxYes3(){
-        spinWheelCheckBox = new JCheckBox("YES");
-        panel3.add(this.spinWheelCheckBox);
-        spinWheelCheckBox.setVisible(true);
-        spinWheelCheckBox.setSelected(false);
-        spinWheelCheckBox.setBounds(250, 340, 60, 60);
-        spinWheelCheckBox.setBackground(bkcolor);
+        spinWheelCheckBoxYes3 = new JCheckBox("YES");
+        panel3.add(this.spinWheelCheckBoxYes3);
+        spinWheelCheckBoxYes3.setVisible(true);
+        spinWheelCheckBoxYes3.setSelected(false);
+        spinWheelCheckBoxYes3.setBounds(250, 340, 60, 60);
+        spinWheelCheckBoxYes3.setBackground(bkcolor);
     }
     public void createSpinWheelCheckboxNo3(){
-        spinWheelCheckBox = new JCheckBox("NO");
-        panel3.add(this.spinWheelCheckBox);
-        spinWheelCheckBox.setVisible(true);
-        spinWheelCheckBox.setSelected(false);
-        spinWheelCheckBox.setBounds(350, 340, 60, 60);
-        spinWheelCheckBox.setBackground(bkcolor);
+        spinWheelCheckBoxNo3 = new JCheckBox("NO");
+        panel3.add(this.spinWheelCheckBoxNo3);
+        spinWheelCheckBoxNo3.setVisible(true);
+        spinWheelCheckBoxNo3.setSelected(false);
+        spinWheelCheckBoxNo3.setBounds(350, 340, 60, 60);
+        spinWheelCheckBoxNo3.setBackground(bkcolor);
     }
 
     public void createPage4Label(){
@@ -474,7 +475,8 @@ public class Main {
         panel4.add(this.climb);
         climb.setVisible(true);
         climb.setSelected(false);
-        climb.setBounds(frame.getWidth()/2, 200, 100, 15);
+        climb.setBounds(frame.getWidth()/2, 200, 400, 50);
+        climb.setFont(new Font("Times New Roman", Font.BOLD, 40));
         climb.setBackground(bkcolor);
     }
 
@@ -496,37 +498,6 @@ public class Main {
         bSubmit.setBounds(nextx, nexty,buttonw, buttonh);
         bSubmit.addActionListener(this::actionBSubmit);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -571,8 +542,49 @@ public class Main {
         frame.revalidate();
     }
     public void actionBSubmit (ActionEvent actionEvent){
-        //export data to excel from here
-        
+        //page 1
+        System.out.println("Page 1");
+        System.out.println("Team spinner value: " + this.teamSpinner.getValue());
+        System.out.println("Match number value: " + this.matchSpinner.getValue());
+
+        //page 2
+        System.out.println("Page 2:");
+        System.out.println("Power cell level Auto: bottom:   " + this.bottomSpinner.getValue() + "  Top: " + this.topSpinner.getValue() + "  Top Center:  " + this.topCenterSpinner.getValue());
+        if (this.spinWheelCheckBoxYes.isSelected() == true){
+            System.out.println("Spin the Wheel: Yes");
+        } else{
+            System.out.println("Spin the Wheel: No");
+        }
+
+        //page 3
+        System.out.println("Page 3:");
+        System.out.println("Power cell level Tele-op: bottom:   " + this.bottomSpinner3.getValue() + "  Top: " + this.topSpinner3.getValue() + "  Top Center:  " + this.topCenterSpinner3.getValue());
+        if (this.spinWheelCheckBoxYes3.isSelected() == true){
+            System.out.println("Spin the Wheel: Yes");
+        } else {
+            System.out.println("Spin the Wheel: No");
+        }
+
+        //page 4
+        System.out.println("Page 4:");
+        if (this.climb.isSelected() == true){
+            System.out.println("Can climb: Yes");
+        } else {
+            System.out.println("Can climb: No");
+        }
+        if (this.heavy.isSelected() == true){
+            System.out.println("Heavy Robot");
+        } else if (this.medium.isSelected() == true){
+            System.out.println("Medium Robot");
+        } else if (this.light.isSelected() == true){
+            System.out.println("Light Robot");
+        } else{
+            System.out.println("Robot weight is unclear");
+        }
+
+        System.out.println("Page 5:");
+        System.out.println("Other Info:   " + otherInfo.getText());
+
     }
 
 
